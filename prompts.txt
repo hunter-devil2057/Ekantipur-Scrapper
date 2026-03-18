@@ -1,0 +1,69 @@
+Prompt 1: Initial Script
+Create a Python Playwright script to scrape https://ekantipur.com.
+
+Requirements:
+- Navigate to the Entertainment (मनोरञ्जन) section
+- Extract top 5 news articles
+- Extract title, image URL, category, and author
+- Handle missing author values safely (set to None)
+- Use robust selectors (avoid fragile XPaths)
+- Include proper waiting for dynamic content
+- Use sync_playwright
+
+Also extract:
+- Cartoon of the Day (व्यंग्यचित्र)
+- title, image URL, author
+
+Return structured Python code that saves output to output.json using ensure_ascii=False.
+
+
+Prompt 2: Improve Selectors
+Improve the Playwright selectors for ekantipur.com scraping.
+
+Constraints:
+- Prefer semantic selectors or class-based selectors
+- Avoid absolute XPaths
+- Ensure selectors are stable and production-ready
+
+Explain why each selector is chosen.
+
+
+Prompt 3: Adding Error Handling
+Refactor the scraping script to include:
+- try/except blocks
+- safe element extraction (check if element exists)
+- fallback values (None)
+
+Make the script robust against missing elements.
+
+
+Prompt 4: Handle Lazy Loading
+Update the Playwright script to handle lazy-loaded images and dynamic content.
+
+Add:
+- scrolling logic
+- wait_for_load_state("networkidle")
+- waits for image elements
+
+Ensure all images are fully loaded before extraction.
+
+
+Prompt 5: Code Optimization
+Optimize the Playwright scraping script:
+- reduce redundancy
+- modularize code into functions
+- improve readability
+- add meaningful comments
+
+Keep it clean and production-ready.
+
+
+Prompt 6: Debugging Help
+The script is not extracting data correctly from ekantipur.com.
+
+Help debug:
+- verify selectors
+- suggest fixes
+- add print statements for debugging
+
+Explain step-by-step what might be wrong.
