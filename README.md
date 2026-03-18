@@ -21,7 +21,7 @@ A robust Python-based web scraper built with **Playwright** to extract the lates
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/ekantipur-scraper.git
+   git clone https://github.com/hunter-devil2057/ekantipur-scraper.git
    cd ekantipur-scraper
    ```
 
